@@ -1,6 +1,6 @@
 {
   "name": "omics-central-viz",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A React UI component library using plotly",
   "main": "dist/omics-central-viz.js",
   "scripts": {
