@@ -1,8 +1,8 @@
 {
-  "name": "rinse-react",
-  "version": "4.0.0",
-  "description": "Rinse, React, repeat. A React component library boilerplate.",
-  "main": "dist/rinse.js",
+  "name": "omics-central-viz",
+  "version": "0.0.0",
+  "description": "A React UI component library using plotly",
+  "main": "dist/omics-central-viz.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
@@ -21,7 +21,7 @@
     "components",
     "components"
   ],
-  "author": "Connor Wilson",
+  "author": "Amrit Singh",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cwlsn/rinse-react/issues"
