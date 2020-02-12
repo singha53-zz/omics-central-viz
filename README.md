@@ -16,7 +16,7 @@ $ cd omics-central-viz
 
 ## Development and Storybook
 
-You can easily develop and interact with your components by using Storybook. To run the local server, simply run:
+I used Storybook to test the components. To run the local server, simply run:
 
 ```bash
 $ npm i
