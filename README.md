@@ -26,4 +26,4 @@ $ npm run storybook
 Navigate to [http://localhost:9001](http://localhost:9001) to view your stories. They should automatically update as you develop.
 
 # References
-[Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)!
+[Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)
