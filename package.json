@@ -1,6 +1,6 @@
 {
   "name": "omics-central-viz",
-  "version": "0.3.2",
+  "version": "0.4.2",
   "description": "A React UI component library using plotly",
   "main": "dist/omics-central-viz.js",
   "scripts": {
@@ -32,6 +32,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^4.0.0-alpha.20",
+    "@storybook/addon-console": "1.2.1",
     "@storybook/react": "^4.1.18",
     "@tulipjs/eslint-config": "^1.1.1",
     "babel-loader": "^8.0.1",

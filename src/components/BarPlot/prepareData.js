@@ -1,25 +1,26 @@
-export const PrepareData = (x, y, xlab, ylab, title) => {
-  const levels = [...new Set(x)]
+export const PrepareData = (x, y, xlab, ylab, title, yint) => {
 
-  const data = y === undefined ? {} : levels.map(lvl => {
-    const values = x.map((e, ind) => {
-      return e == lvl ? y[ind] : undefined
-      }).filter(i => i !== undefined)
-
-    return {
-      y: values,
-      name: lvl,
-      boxpoints: true,
-      whiskerwidth: 0.75,
-      marker: {
-        color: "blue"
-      },
-      line: {
-        width: 1
-      },
-      type: "box"
-    }
-  })
+  const data = [{
+    x: x,
+    y: y,
+    name: "",
+    marker: {
+      color: "#1f77b4"
+    },
+    type: "bar"
+  }]
+  // add horizontal line if yint is specified
+  yint ? data.push({
+    x: x,
+    y: yint,
+    mode: "lines",
+    name: "",
+    line: {
+      color: 'rgb(55, 128, 191)',
+      width: 1,
+      dash: 'dot'
+      }
+    }) : '';
 
   return {
     data: data,

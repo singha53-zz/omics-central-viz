@@ -3,3 +3,4 @@
 // allows for simpler scaling when your library grows in size, and even adds
 // different tech like TypeScript
 export { default as BarPlot } from './BarPlot';
+export { default as BoxPlot } from './BoxPlot';
