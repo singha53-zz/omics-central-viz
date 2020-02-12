@@ -1,5 +1,5 @@
 <p align="center">
-	<img src={require('./public/logo.png)} width={400} alt="Rinse" />
+	<img src={require('./public/logo.png')} width={400} alt="Rinse" />
 </p>
 
 > Omics Central Viz, a React component UI graphing library.
