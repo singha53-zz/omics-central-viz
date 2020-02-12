@@ -1,6 +1,6 @@
 {
   "name": "omics-central-viz",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "A React UI component library using plotly",
   "main": "dist/omics-central-viz.js",
   "scripts": {
@@ -46,12 +46,7 @@
     "webpack-cli": "^3.2.0"
   },
   "dependencies": {
-    "@material-ui/core": "4.9.2",
-    "@material-ui/icons": "4.9.1",
-    "@material-ui/styles": "4.9.0",
-    "clsx": "1.1.0",
     "plotly.js": "1.52.2",
-    "prop-types": "15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-plotly.js": "2.4.0",
