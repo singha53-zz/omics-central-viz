@@ -1,21 +1,24 @@
-export const PrepareData = (x, y, color, xlab, ylab, title, yint) => {
+export const PrepareData = (data, x, y, color, xlab, ylab, title, yint, xzeroline=false, yzeroline=false,showLegend=false) => {
+
+
   // to color by groups (categorical or continuous)
   const stratify = color ? true : false;
-  let data;
+  let plotlyData;
   if (stratify) {  
     // color by continuous variable
-    if (typeof(color[0]) === 'number') {
-      data = [{
-        x: x,
-        y: y,
+    if (typeof(data[color][0]) === 'number') {
+      plotlyData = [{
+        x: data[x],
+        y: data[y],
         type: "scatter",
         mode: "markers",
         marker: {
-          color: color,
+          color: data[color],
           size: 10,
-          cmin: Math.min(color),
-          cmax: Math.max(color),
+          cmin: Math.min(data[color]),
+          cmax: Math.max(data[color]),
           colorbar: {
+            title: color,
             len: 0.3,
             y: 0,
             yanchor: "bottom"
@@ -23,59 +26,50 @@ export const PrepareData = (x, y, color, xlab, ylab, title, yint) => {
         }
       }]
     } else {
-    // color by categorical variable
-      data = [{
-        x: x,
-        y: y,
-        type: "scatter",
-        mode: "markers"
-      }]
+      // color by categorical variable
+      const levels = [...new Set(data[color])]
+      
+      plotlyData = levels.map(lvl => {
+        const xSubset = data[x].map((e, ind) => {
+          return lvl === data[color][ind] ? e : undefined
+        }).filter(i => i !== undefined)
+        const ySubset = data[y].map((e, ind) => {
+          return lvl === data[color][ind] ? e : undefined
+        }).filter(i => i !== undefined)
+
+        return {
+          x: xSubset,
+          y: ySubset,
+          name: lvl,
+          type: "scatter",
+          mode: "markers"
+        }
+      })
     }
   } else {
     // do not color points
-    data = [{
-      x: x,
-      y: y,
+    plotlyData = [{
+      x: data[x],
+      y: data[y],
       type: "scatter",
       mode: "markers"
     }]
   }
 
-  // const data = [{
-  //   x: x,
-  //   y: y,
-  //   name: "",
-  //   marker: {
-  //     color: "#1f77b4"
-  //   },
-  //   type: "bar"
-  // }]
-  // // add horizontal line if yint is specified
-  // yint ? data.push({
-  //   x: x,
-  //   y: yint,
-  //   mode: "lines",
-  //   name: "",
-  //   line: {
-  //     color: 'rgb(55, 128, 191)',
-  //     width: 1,
-  //     dash: 'dot'
-  //     }
-  //   }) : '';
-
   return {
-    data: data,
+    data: plotlyData,
     layout: {
       title: title,
-      showlegend: false,
+      showlegend: showLegend,
       xaxis: {
+        zeroline: xzeroline,
         automargin: true,
         title: {
           text: xlab
         }
       },
       yaxis: {
-        zeroline: false,
+        zeroline: yzeroline,
         automargin: true,
         title: {
           text: ylab

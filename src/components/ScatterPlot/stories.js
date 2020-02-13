@@ -14,11 +14,35 @@ const pcs = require('./data/pcs.json')
 // rendered in the rendering area
 storiesOf('ScatterPlot')
 	.add('Component plot', () => (
-		<ScatterPlot 
-		  x = {pcs.PC1}
-		  y = {pcs.PC2}
-			xlab = {"PC1"}
-			ylab = {"PC2"}
+		<ScatterPlot
+      data = { pcs }
+		  x = { "PC1" }
+		  y = { "PC2" }
+			xlab = { "PC1" }
+			ylab = { "PC2" }
 			title = {"Component plot"}
+		/>
+	))
+  .add('Component Plot (colored by continuous variable)', () => (
+		<ScatterPlot 
+      data = { pcs }
+		  x = { "PC1" }
+		  y = { "PC2" }
+      color = { "PC1" }
+			xlab = { "PC1" }
+			ylab = { "PC2" }
+			title = {"Component plot (colored by PC1)"}
+		/>
+	))
+  .add('Component Plot (colored by categorical variable)', () => (
+		<ScatterPlot 
+      data = { pcs }
+		  x = { "PC1" }
+		  y = { "PC2" }
+      color = { "group" }
+			xlab = { "PC1" }
+			ylab = { "PC2" }
+			title = { "Component plot (colored by group)" }
+      showLegend = { true }
 		/>
 	));
