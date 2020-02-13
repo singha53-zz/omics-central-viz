@@ -12,16 +12,14 @@ Use in your project:
 $ npm i omics-central-viz
 ```
 
-## For developers: 
+## Development and Storybook
 
-To start, clone this repository and start your own Git journey!
+To start, clone this repository:
 
 ```bash
 $ git clone https://github.com/singha53/omics-central-viz
 $ cd omics-central-viz
 ```
-
-## Development and Storybook
 
 I used Storybook to test the components. To run the local server, simply run:
 
