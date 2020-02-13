@@ -6,12 +6,19 @@
 
 ## Get Started
 
+Use in your project:
+
+```bash
+$ npm i omics-central-viz
+```
+
+## For developers: 
+
 To start, clone this repository and start your own Git journey!
 
 ```bash
 $ git clone https://github.com/singha53/omics-central-viz
 $ cd omics-central-viz
-
 ```
 
 ## Development and Storybook
