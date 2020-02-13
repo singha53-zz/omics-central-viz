@@ -3,9 +3,9 @@ import Plot from 'react-plotly.js';
 import { PrepareData } from './prepareData.js'
 
 function BoxPlot(props){
-  const { x, y, xlab, ylab, title, ...rest } = props;
+  const { data, x, y, xlab, ylab, title, ...rest } = props;
 
-  const plot = PrepareData(x, y, xlab, ylab, title)
+  const plot = PrepareData(data, x, y, xlab, ylab, title)
 
   return (<Plot
             data={ plot.data }

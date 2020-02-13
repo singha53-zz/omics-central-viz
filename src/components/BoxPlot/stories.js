@@ -15,10 +15,11 @@ const data = require('./data/data.json')
 storiesOf('BoxPlot')
 	.add('IL-1 expression', () => (
 		<BoxPlot 
-		  x = {data.response}
-		  y = {data.exp}
-			xlab = {"Expression"}
-			ylab = {"Group"}
-			title = {"Levels of IL-1 across different groups"}
+		  data = { data }
+		  x = { "response" }
+		  y = { "exp" }
+			xlab = { "Expression" }
+			ylab = { "Group" }
+			title = {"Levels of IL-1 across different groups" }
 		/>
 	));

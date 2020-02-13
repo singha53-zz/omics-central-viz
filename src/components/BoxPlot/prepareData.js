@@ -1,9 +1,9 @@
-export const PrepareData = (x, y, xlab, ylab, title) => {
-  const levels = [...new Set(x)]
+export const PrepareData = (data, x, y, xlab, ylab, title) => {
+  const levels = [...new Set(data[x])]
 
-  const data = y === undefined ? {} : levels.map(lvl => {
-    const values = x.map((e, ind) => {
-      return e == lvl ? y[ind] : undefined
+  const plotlyData = y === undefined ? {} : levels.map(lvl => {
+    const values = data[x].map((e, ind) => {
+      return e == lvl ? data[y][ind] : undefined
       }).filter(i => i !== undefined)
 
     return {
@@ -22,7 +22,7 @@ export const PrepareData = (x, y, xlab, ylab, title) => {
   })
 
   return {
-    data: data,
+    data: plotlyData,
     layout: {
       title: title,
       showlegend: false,
