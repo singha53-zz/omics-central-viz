@@ -1,4 +1,4 @@
-export const PrepareData = (data, x, y, color, xlab, ylab, title, yint, xzeroline=false, yzeroline=false,showLegend=false) => {
+export const PrepareData = (data, x, y, color, text, hovertemplate, xlab, ylab, title, yint=undefined, xzeroline=false, yzeroline=false,showLegend=false) => {
 
 
   // to color by groups (categorical or continuous)
@@ -10,6 +10,8 @@ export const PrepareData = (data, x, y, color, xlab, ylab, title, yint, xzerolin
       plotlyData = [{
         x: data[x],
         y: data[y],
+        text: data[text],
+        hovertemplate: hovertemplate,
         type: "scatter",
         mode: "markers",
         marker: {
@@ -40,6 +42,8 @@ export const PrepareData = (data, x, y, color, xlab, ylab, title, yint, xzerolin
         return {
           x: xSubset,
           y: ySubset,
+          text: data[text],
+          hovertemplate: hovertemplate,
           name: lvl,
           type: "scatter",
           mode: "markers"
@@ -51,10 +55,24 @@ export const PrepareData = (data, x, y, color, xlab, ylab, title, yint, xzerolin
     plotlyData = [{
       x: data[x],
       y: data[y],
+      text: data[text],
+      hovertemplate: hovertemplate,
       type: "scatter",
       mode: "markers"
     }]
   }
+  // add horizontal line if yint is specified
+  yint === undefined ? '' : plotlyData.push({
+    x: [Math.min(...data[x]), Math.max(...data[x])],
+    y: data[yint].slice(0,2),
+    mode: "lines",
+    name: "FDR cutoff",
+    line: {
+      color: 'rgb(55, 128, 191)',
+      width: 1,
+      dash: 'dot'
+      }
+    });
 
   return {
     data: plotlyData,
