@@ -5,8 +5,8 @@ import { action } from '@storybook/addon-actions';
 import { withConsole } from '@storybook/addon-console';
 // Import our component from this folder
 import BarPlot from './BarPlot';
-const propVar = require('./propVarData.json')
-const pvalHist = require('./pvalHistData.json')
+const propVar = require('./data/propVarData.json')
+const pvalHist = require('./data/pvalHistData.json')
 
 // Here we describe the stories we want to see of the Button. The component is
 // pretty simple so we will just make two, one with text and one with emojis

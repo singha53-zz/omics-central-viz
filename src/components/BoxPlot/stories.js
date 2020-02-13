@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 // Import our component from this folder
 import BoxPlot from './BoxPlot';
-const data = require('./data.json')
+const data = require('./data/data.json')
 
 // Here we describe the stories we want to see of the Button. The component is
 // pretty simple so we will just make two, one with text and one with emojis
