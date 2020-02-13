@@ -18,8 +18,9 @@ storiesOf('BarPlot')
   .addDecorator((storyFn, context) => withConsole()(storyFn)(context))
 	.add('Scree plot', () => (
 		<BarPlot
-      x = { propVar.comp }
-      y = { propVar.var }
+      data = { propVar }
+      x = { "comp" }
+      y = { "var" }
       xlab = { "PCs" }
       ylab = { "Proportion of variation explained (%)"}
       title = { "Scree plot" }
@@ -30,11 +31,12 @@ storiesOf('BarPlot')
 	))
   .add('P-value histogram', () => (
 		<BarPlot
-      x = { pvalHist.bins }
-      y = { pvalHist.pvalFreq }
+      data = { pvalHist }
+      x = { "bins" }
+      y = { "pvalFreq" }
       xlab = { "P-value bins" }
       ylab = { "Frequency"}
       title = { "P-value histogram" }
-      yint = { pvalHist.h0Line } 
+      yint = { "h0Line" } 
 		/>
 	));

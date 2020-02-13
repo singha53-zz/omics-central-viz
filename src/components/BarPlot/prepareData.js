@@ -1,8 +1,8 @@
-export const PrepareData = (x, y, xlab, ylab, title, yint) => {
+export const PrepareData = (data, x, y, xlab, ylab, title, yint) => {
 
-  const data = [{
-    x: x,
-    y: y,
+  const plotlyData = [{
+    x: data[x],
+    y: data[y],
     name: "",
     marker: {
       color: "#1f77b4"
@@ -10,9 +10,9 @@ export const PrepareData = (x, y, xlab, ylab, title, yint) => {
     type: "bar"
   }]
   // add horizontal line if yint is specified
-  yint ? data.push({
-    x: x,
-    y: yint,
+  yint ?  plotlyData.push({
+    x: data[x],
+    y: data[yint],
     mode: "lines",
     name: "",
     line: {
@@ -23,7 +23,7 @@ export const PrepareData = (x, y, xlab, ylab, title, yint) => {
     }) : '';
 
   return {
-    data: data,
+    data: plotlyData,
     layout: {
       title: title,
       showlegend: false,

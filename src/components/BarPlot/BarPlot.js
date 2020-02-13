@@ -3,9 +3,9 @@ import Plot from 'react-plotly.js';
 import { PrepareData } from './prepareData.js'
 
 function BarPlot(props){
-  const { x, y, xlab, ylab, title, yint, clickHook, ...rest } = props;
+  const { data, x, y, xlab, ylab, title, yint, clickHook, ...rest } = props;
 
-  const plot = PrepareData(x, y, xlab, ylab, title, yint)
+  const plot = PrepareData(data, x, y, xlab, ylab, title, yint)
 
   return (<Plot
             data={ plot.data }
