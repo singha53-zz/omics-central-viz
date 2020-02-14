@@ -2,7 +2,7 @@
 	<img src="https://github.com/singha53/omics-central-viz/blob/master/public/logo.png" width={400} alt="Omics-Central-Viz" />
 </p>
 
-> Omics Central Viz, a React component UI graphing library built using react-plotly.js.
+> Omics Central Viz, a React UI component library for bioinformatics plots using [react-plotly.js](https://github.com/plotly/react-plotly.js/) and [tidy data](https://r4ds.had.co.nz/tidy-data.html).
 
 ## Get Started
 
@@ -11,8 +11,7 @@
 * [Quick start options](#quick-start-options)
 * [Documentation](#documentation)
 * [Bugs and feature requests](#bugs-and-feature-requests)
-* [Development and Storybook](#development)
-* [Community](#community)
+* [Contributing](#contributing)
 * [References](#ref)
 * [Copyright and license](#copyright-and-license)
 
@@ -25,37 +24,26 @@ $ npm i omics-central-viz
 ```
 
 ## Documentation
+* [BarPlot](): *e.g.* Scree plot, p-value histogram
+* [BoxPlot](): *e.g.* IL-1 expression
+* [ScatterPlot](); *e.g.* Component plot (with/without stratification), Volcano plot
+* [FacetPlot]()
+
 
 ## Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issues guidelines]().
 
-## Development and Storybook
+## Contributing
 
-To start, clone this repository:
-
-```bash
-$ git clone https://github.com/singha53/omics-central-viz
-$ cd omics-central-viz
-```
-
-I used Storybook to test the components. To run the local server, simply run:
-
-```bash
-$ npm i
-$ npm run storybook
-```
-
-Navigate to [http://localhost:9001](http://localhost:9001) to view your stories. They should automatically update as you develop.
+Please read through our [contributing guidelines](https://github.com/singha53/omics-central-viz/blob/master/CONTRIBUTING.md). 
 
 # References
-[Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)
-
+* [Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)
+* [plot.js](https://github.com/plotly/plotly.js)
 
 ## Copyright and license
 
-Code and documentation copyright 2020 Plotly, Inc.
+Copyright 2020 AMRITPAL SINGH Inc.
 
-Code released under the [MIT license](https://github.com/plotly/plotly.js/blob/master/LICENSE).
-
-Docs released under the [Creative Commons license](https://github.com/plotly/documentation/blob/source/LICENSE).
+Code released under the [MIT license](https://github.com/singha53/omics-central-viz/blob/master/LICENSE).
