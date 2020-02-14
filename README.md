@@ -41,7 +41,7 @@ Have a bug or a feature request? Please first read the [issues guidelines](https
 
 Please read through our [contributing guidelines](https://github.com/singha53/omics-central-viz/blob/master/CONTRIBUTING.md). 
 
-# References
+## References
 * [Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)
 * [plotly.js](https://github.com/plotly/plotly.js)
 * [react-plotly.js demo](http://react-plotly.js-demo.getforge.io/)
