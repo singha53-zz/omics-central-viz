@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cwlsn/rinse-react.git"
+    "url": "git+https://github.com/singha53/omics-central-viz"
   },
   "keywords": [
     "plotly",
@@ -23,9 +23,9 @@
   "author": "Amrit Singh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cwlsn/rinse-react/issues"
+    "url": "https://github.com/singha53/omics-central-viz/issues"
   },
-  "homepage": "https://github.com/cwlsn/rinse-react#readme",
+  "homepage": "https://github.com/singha53/omics-central-viz#readme",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
