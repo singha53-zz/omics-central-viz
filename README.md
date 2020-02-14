@@ -4,9 +4,7 @@
 
 > Omics Central Viz, a React UI component library for bioinformatics plots using [react-plotly.js](https://github.com/plotly/react-plotly.js/) and [tidy data](https://r4ds.had.co.nz/tidy-data.html).
 
-Why did I built this? To store all the graphing code for my main app: [Omics Central](https://omicscentral.com/), a data analytics platform for omics data.
-
-## Get Started
+**Why did I built this?** To store all the graphing code for my main app: [*Omics Central*](https://omicscentral.com/), a data analytics platform for omics data.
 
 ## Table of contents
 
