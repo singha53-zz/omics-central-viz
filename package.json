@@ -1,7 +1,7 @@
 {
   "name": "omics-central-viz",
   "version": "0.4.2",
-  "description": "A React UI component library using plotly",
+  "description": "Omics Central Viz, a React UI component library for bioinformatics plots using react-plotly.js and tidy data.",
   "main": "dist/omics-central-viz.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,11 +15,10 @@
     "url": "git+https://github.com/cwlsn/rinse-react.git"
   },
   "keywords": [
-    "boilerplate",
+    "plotly",
     "react",
-    "shared",
-    "components",
-    "components"
+    "graphs",
+    "bioinformatics"
   ],
   "author": "Amrit Singh",
   "license": "MIT",
