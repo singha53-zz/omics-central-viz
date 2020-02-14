@@ -4,7 +4,7 @@
 
 > Omics Central Viz, a React UI component library for bioinformatics plots using [react-plotly.js](https://github.com/plotly/react-plotly.js/) and [tidy data](https://r4ds.had.co.nz/tidy-data.html).
 
-**Why did I built this?** To store all the graphing code for my main app: [*Omics Central*](https://omicscentral.com/), a data analytics platform for omics data.
+**Why did I build this?** To store all the graphing code for my main app: [*Omics Central*](https://omicscentral.com/), a data analytics platform for omics data.
 
 ## Table of contents
 
@@ -24,10 +24,10 @@ $ npm i omics-central-viz
 ```
 
 ## Documentation
-* [BarPlot](): *e.g.* Scree plot, p-value histogram
-* [BoxPlot](): *e.g.* IL-1 expression
-* [ScatterPlot](): *e.g.* Component plot (with/without stratification), Volcano plot
-* [FacetPlot]()
+* [BarPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/BarPlot/README.md): *e.g.* Scree plot, p-value histogram
+* [BoxPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/BoxPlot/README.md): *e.g.* IL-1 expression
+* [ScatterPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/ScatterPlot/README.md): *e.g.* Component plot (with/without stratification), Volcano plot
+* [FacetPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/FacetPlot/README.md)
 
 
 ## Bugs and feature requests
@@ -41,6 +41,7 @@ Please read through our [contributing guidelines](https://github.com/singha53/om
 # References
 * [Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)
 * [plotly.js](https://github.com/plotly/plotly.js)
+* [react-plotly.js demo](http://react-plotly.js-demo.getforge.io/)
 
 ## Copyright and license
 
