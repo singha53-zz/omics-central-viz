@@ -24,6 +24,9 @@ $ npm i omics-central-viz
 ```
 
 ## Documentation
+
+![GIF](https://github.com/singha53/omics-central-viz/blob/master/public/walkthrough.gif)
+
 * [BarPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/BarPlot/README.md): *e.g.* Scree plot, p-value histogram
 * [BoxPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/BoxPlot/README.md): *e.g.* IL-1 expression
 * [ScatterPlot](https://github.com/singha53/omics-central-viz/blob/master/src/components/ScatterPlot/README.md): *e.g.* Component plot (with/without stratification), Volcano plot
