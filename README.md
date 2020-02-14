@@ -26,7 +26,7 @@ $ npm i omics-central-viz
 ## Documentation
 * [BarPlot](): *e.g.* Scree plot, p-value histogram
 * [BoxPlot](): *e.g.* IL-1 expression
-* [ScatterPlot](); *e.g.* Component plot (with/without stratification), Volcano plot
+* [ScatterPlot](): *e.g.* Component plot (with/without stratification), Volcano plot
 * [FacetPlot]()
 
 
