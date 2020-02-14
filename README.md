@@ -32,7 +32,7 @@ $ npm i omics-central-viz
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issues guidelines]().
+Have a bug or a feature request? Please first read the [issues guidelines](https://github.com/singha53/omics-central-viz/blob/master/.github/ISSUE_TEMPLATE.md).
 
 ## Contributing
 
@@ -40,7 +40,7 @@ Please read through our [contributing guidelines](https://github.com/singha53/om
 
 # References
 * [Rinse React component library biolerplate](https://itnext.io/how-to-write-your-own-reusable-react-component-library-a57dc7c9a210)
-* [plot.js](https://github.com/plotly/plotly.js)
+* [plotly.js](https://github.com/plotly/plotly.js)
 
 ## Copyright and license
 
