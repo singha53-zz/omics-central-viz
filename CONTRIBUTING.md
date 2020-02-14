@@ -41,3 +41,21 @@ We use the following [labels](https://github.com/plotly/plotly.js/labels) to tra
 - sample example data was created using R (version 3.6.1) and R-packages: 
   * [jsonlite](https://cran.r-project.org/web/packages/jsonlite/index.html)
   * [limma](https://bioconductor.org/packages/release/bioc/html/limma.html) 
+
+#### To start, clone this repository:
+
+```bash
+$ git clone https://github.com/singha53/omics-central-viz
+$ cd omics-central-viz
+```
+
+#### Storybook
+
+I used Storybook to test the components. To run the local server, simply run:
+
+```bash
+$ npm i
+$ npm run storybook
+```
+
+Navigate to [http://localhost:9001](http://localhost:9001) to view your stories. They should automatically update as you develop.
