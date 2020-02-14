@@ -34,7 +34,7 @@ write(toJSON(pvalHistData, dataframe="columns"), file="./pvalHistData.json")
 
 ```javascript
 import React from 'react';
-import Plot from 'omics-central-viz';
+import { BarPlot } from 'omics-central-viz';
 const propVar = require('./data/propVarData.json')
 
 class App extends React.Component {
@@ -58,7 +58,7 @@ class App extends React.Component {
 
 ```javascript
 import React from 'react';
-import Plot from 'omics-central-viz';
+import { BarPlot } from 'omics-central-viz';
 const propVar = require('./data/propVarData.json')
 
 const ScreePlot = () => {
@@ -88,7 +88,7 @@ const ScreePlot = () => {
 
 ```javascript
 import React from 'react';
-import Plot from 'omics-central-viz';
+import { BarPlot } from 'omics-central-viz';
 const pvalHist = require('./data/pvalHistData.json')
 
 class App extends React.Component {

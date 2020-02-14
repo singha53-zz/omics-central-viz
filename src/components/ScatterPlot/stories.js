@@ -37,6 +37,19 @@ storiesOf('ScatterPlot', './index.js')
 			title = {"Component plot (colored by PC1)"}
 		/>
 	))
+	.add('Component Plot (colored by categorical variable)', () => (
+		<ScatterPlot 
+      data = { pcs }
+		  x = { "PC1" }
+		  y = { "PC2" }
+      color = { "group" }
+      text = { "_row" }
+			xlab = { "PC1" }
+			ylab = { "PC2" }
+			title = {"Component plot (colored by group)"}
+			showLegend = { true }
+		/>
+	))
   .add('Volcano plot', () => (
 		<ScatterPlot 
       data = { topTable }

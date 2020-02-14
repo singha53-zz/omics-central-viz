@@ -17,7 +17,7 @@ write(toJSON(data, dataframe="columns"), file="./data.json")
 
 ```javascript
 import React from 'react';
-import Plot from 'omics-central-viz';
+import { BoxPlot } from 'omics-central-viz';
 const data = require('./data/data.json')
 
 class App extends React.Component {
