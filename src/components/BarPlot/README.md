@@ -76,7 +76,7 @@ const ScreePlot = () => {
       ylab = { "Proportion of variation explained (%)"}
       title = { "Scree plot" }
       clickHook = {e => {
-        changeComps(`PC${parseInt(e.points[0].label[2])}`)
+        setComps(`PC${parseInt(e.points[0].label[2])}`)
       }}
     />
   );
