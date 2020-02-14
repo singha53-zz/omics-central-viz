@@ -14,7 +14,7 @@ const pvalHist = require('./data/pvalHistData.json')
 //
 // .add() takes a name and then a function that should return what you want
 // rendered in the rendering area
-storiesOf('BarPlot')
+storiesOf('BarPlot', './index.js')
   .addDecorator((storyFn, context) => withConsole()(storyFn)(context))
 	.add('Scree plot', () => (
 		<BarPlot

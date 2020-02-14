@@ -12,7 +12,7 @@ const data = require('./data/data.json')
 //
 // .add() takes a name and then a function that should return what you want
 // rendered in the rendering area
-storiesOf('BoxPlot')
+storiesOf('BoxPlot', './index.js')
 	.add('IL-1 expression', () => (
 		<BoxPlot 
 		  data = { data }

@@ -13,7 +13,7 @@ const topTable = require('./data/topTable.json')
 //
 // .add() takes a name and then a function that should return what you want
 // rendered in the rendering area
-storiesOf('ScatterPlot')
+storiesOf('ScatterPlot', './index.js')
 	.add('Component plot', () => (
 		<ScatterPlot
       data = { pcs }
