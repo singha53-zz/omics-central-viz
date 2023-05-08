@@ -46,7 +46,7 @@
     "webpack-cli": "^3.2.0"
   },
   "dependencies": {
-    "plotly.js": "1.52.2",
+    "plotly.js": "1.58.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-plotly.js": "2.4.0"
